@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="dist/css/style.min.css"
+    />
+    <script
+      src="src/scripts/srcipt.js"
+      defer
+    ></script>
+
+    <title>ProgressBar</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="label">Progress</div>
+
+        <div class="wrapper">
+          <div id="progress-bar"></div>
+
+          <div class="controls">
+            <label
+              for="value"
+              class="label-container"
+            >
+              <input
+                data-type="value"
+                type="text"
+                id="value"
+                value="75"
+              />
+              <span>Value</span>
+            </label>
+
+            <div class="toggle-container">
+              <label
+                for="animate"
+                class="toggler-wrapper"
+              >
+                <input
+                  data-type="animate"
+                  type="checkbox"
+                  id="animate"
+                />
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+
+              <span>Animate</span>
+            </div>
+
+            <div class="toggle-container">
+              <label
+                for="hide"
+                class="toggler-wrapper"
+              >
+                <input
+                  data-type="hide"
+                  type="checkbox"
+                  id="hide"
+                />
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+              </label>
+
+              <span>Hide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

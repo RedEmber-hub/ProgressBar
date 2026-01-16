@@ -1,0 +1,54 @@
+.toggler-wrapper {
+  display: block;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggler-wrapper input[type='checkbox'] {
+  display: none;
+}
+
+.toggler-wrapper input[type='checkbox']:checked + .toggler-slider {
+  background-color: #005cff;
+}
+
+.toggler-wrapper .toggler-slider {
+  background-color: #dae6ec;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler-wrapper .toggler-knob {
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler-wrapper input[type='checkbox']:checked + .toggler-slider .toggler-knob {
+  left: calc(100% - 19px - 3px);
+}
+
+.toggler-wrapper .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  background-color: #fff;
+}
+
+input {
+  border-radius: 100px;
+  border: 2px solid black;
+  width: 45px;
+  height: 25px;
+  padding: 0px 6px;
+}

@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+
+  max-width: 1368px;
+  margin: 0 auto;
+  gap: 64px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 150px;
+}
+
+.label {
+  text-align: left;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 16px;
+}
+
+input {
+  text-align: center;
+}

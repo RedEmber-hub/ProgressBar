@@ -1,0 +1,41 @@
+.progress {
+  width: min(60vw, 200px);
+  aspect-ratio: 1 / 1;
+
+  display: grid;
+  place-items: center;
+
+  & svg {
+    .progress__track {
+      stroke: #dae6ec;
+    }
+
+    .progress__indicator {
+      stroke: #005cff;
+      transition: stroke-dashoffset 0.3s ease;
+      transform-origin: 50% 50%;
+    }
+  }
+
+  &.animated {
+    .progress__indicator {
+      animation: rotate 1.2s linear infinite;
+    }
+  }
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-90deg);
+  }
+
+  to {
+    transform: rotate(270deg);
+  }
+}
