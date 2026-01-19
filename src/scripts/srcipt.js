@@ -65,6 +65,7 @@ const controls = document.querySelector('.controls');
 const valueInput = document.getElementById('value');
 
 const progress = new Progress(root);
+const input = document.querySelector('input');
 
 progress.setValue(valueInput.value);
 
@@ -81,5 +82,13 @@ controls.addEventListener('change', (event) => {
     case 'hide':
       progress.setHidden(event.target.checked);
       break;
+  }
+});
+
+input.addEventListener('input', ({ target }) => {
+  if (target.value > 100) {
+    target.value = 100;
+  } else if (target.value < 0) {
+    target.value = 0;
   }
 });
